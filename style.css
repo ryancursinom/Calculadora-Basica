@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    top: 0;
+    padding: 0;
+    font-family: "Arial", serif;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    place-self: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,50px);
+    grid-gap: 0.1rem;
+    grid-template-areas:
+    "visor visor visor visor"
+    "cleaner soma subtracao porcentagem"
+    "um dois tres divisao"
+    "quatro cinco seis multiplicacao"
+    "sete oito nove resultado"
+    "zero zero zero resultado"
+    ;
+    background-color: #4b4b4b;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+#um,#dois,#tres,#quatro,#cinco,#seis,#sete,#oito,#nove,#zero{
+    background-color: #6e6e6e;
+}
+#cleaner,#soma, #subtracao, #divisao, #multiplicacao, #porcentagem, #resultado{
+    background-color: #333232;
+}
+#cleaner,#soma, #subtracao, #divisao, #multiplicacao, #porcentagem, #resultado, #um,#dois,#tres,#quatro,#cinco,#seis,#sete,#oito,#nove,#zero{
+    border: none;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+}
+#visor{
+    background-color: #d2d2d2;
+}
+#cleaner:hover,#soma:hover, #subtracao:hover, #divisao:hover, #multiplicacao:hover, #porcentagem:hover, #resultado:hover, #um:hover,#dois:hover,#tres:hover,#quatro:hover,#cinco:hover,#seis:hover,#sete:hover,#oito:hover,#nove:hover,#zero:hover{
+    background-color: lightblue;
+    color: black;
+}
+
+#visor{
+    font-size: 1.3rem;
+    place-content: center;
+    text-align: end;
+}

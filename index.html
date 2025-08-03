@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="CSS, HTML, JavaScript, Calculadora, Matemática, Física, Treino, Projeto">
+    <meta name="author" content="Ryan Cursino Moraes">
+    <meta name="description" content="Calculadora de contas básicas feita para treino de um aluno do 1° ano do ensino médio, com layout simples e funcional">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Contas Básicas - Ryan Cursino Moraes</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora Básica</h1>
+        <h3>Made by: Ryan Cursino Moraes</h3>
+    </header>
+    <div class="grid-container">
+<!--        visor e cleaner-->
+        <div style="grid-area: visor" id="visor">0</div>
+        <button style="grid-area: cleaner" id="cleaner" type="button" onclick="cleaner()">C</button>
+<!--        operações-->
+        <button style="grid-area: soma" id="soma" type="button" value="+" onclick="mostrarElemento('soma')">+</button>
+        <button style="grid-area: subtracao" id="subtracao" type="button" value="-" onclick="mostrarElemento('subtracao')">-</button>
+        <button style="grid-area: divisao" id="divisao" type="button" value="/" onclick="mostrarElemento('divisao')">/</button>
+        <button style="grid-area: multiplicacao" id="multiplicacao" type="button" value="*" onclick="mostrarElemento('multiplicacao')">*</button>
+        <button style="grid-area: porcentagem" id="porcentagem" type="button" value="%" onclick="mostrarElemento('porcentagem')">%</button>
+        <button style="grid-area: resultado" id="resultado" type="button" onclick="mostrarResultado()">=</button>
+<!--        numeros-->
+        <button style="grid-area: um" id="um" value="1" type="button" onclick="mostrarElemento('um')">1</button>
+        <button style="grid-area: dois" id="dois" value="2" type="button" onclick="mostrarElemento('dois')">2</button>
+        <button style="grid-area: tres" id="tres" value="3" type="button" onclick="mostrarElemento('tres')">3</button>
+        <button style="grid-area: quatro" id="quatro" value="4" type="button" onclick="mostrarElemento('quatro')">4</button>
+        <button style="grid-area: cinco" id="cinco" value="5" type="button" onclick="mostrarElemento('cinco')">5</button>
+        <button style="grid-area: seis" id="seis" value="6" type="button" onclick="mostrarElemento('seis')">6</button>
+        <button style="grid-area: sete" id="sete" value="7" type="button" onclick="mostrarElemento('sete')">7</button>
+        <button style="grid-area: oito" id="oito" value="8" type="button" onclick="mostrarElemento('oito')">8</button>
+        <button style="grid-area: nove" id="nove" value="9" type="button" onclick="mostrarElemento('nove')">9</button>
+        <button style="grid-area: zero" id="zero" value="0" type="button" onclick="mostrarElemento('zero')">0</button>
+    </div>
+<!--JavaScript-->
+    <script src="script.js"></script>
+</body>
+</html>
